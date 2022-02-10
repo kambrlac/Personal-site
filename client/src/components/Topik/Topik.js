@@ -55,7 +55,7 @@ import img1 from './Pictures/404.jpeg';
   function Resource() {
     const { infoId, resourceId } = useParams();
   
-    const { name, description, link, video } = getResource({ infoId, resourceId });
+    const { name, description, link } = getResource({ infoId, resourceId });
     
    
   
@@ -72,16 +72,6 @@ import img1 from './Pictures/404.jpeg';
               <h3>{name}</h3>
               <p>{description}</p>
               <a className='links' href={link}>Click here to check them out</a>
-              {/* <div className='app__video'>
-                <video
-                  src={video}
-                  ref={vidRef}
-                  type='video/mp4'
-                  loop
-                  controls={false}
-                  muted
-                />
-              </div> */}
               <p>(Free advertising, I know T_T)</p>
             </div>
           );

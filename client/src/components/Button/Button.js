@@ -10,7 +10,7 @@ export const Button = ({
 
     return(
         <form action="/contact">
-        <button className={'btn ${checkButtonStyle} ${checkButtonSize}'} onClick={onClick} type={type} >
+        <button className={'btn'} onClick={onClick} type={type} >
             Contact me
         </button>
         </form>

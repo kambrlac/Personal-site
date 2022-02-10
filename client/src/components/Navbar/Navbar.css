@@ -50,7 +50,7 @@
   height: 3px;
   width: 0px;
   background: transparent;
-  transition: width 1s ease, background-color .5s ease;
+  transition: width 1s ease;
 }
 
 .nav-links:hover:after {
@@ -79,19 +79,18 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 500px;
+        height: 550px;
         position: absolute;
         top: 59px;
         left: -100%;
-        opacity: 1;
-        transition: all 0.5s ease;
+        opacity: 0;
     }
 
     .nav-menu.active {
         background: linear-gradient(90deg, #7CD1B8, #3E8E7E);
         left: 0;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.8s ease;
         z-index: 1;
     }
 

@@ -6,11 +6,10 @@ import Topik from './components/Topik/Topik';
 
 function App() {
   return (
-    <div>
-     
+    <React.Fragment>
       <Navbar/>
       <Topik/>
-    </div>
+    </React.Fragment>
   );
 }
 
