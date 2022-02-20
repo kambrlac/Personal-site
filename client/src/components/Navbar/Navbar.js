@@ -12,7 +12,7 @@ class Navbar extends Component{
 
     render(){
         return(
-            <header>
+           
             <nav className='NavbarItems'>
                 <a className='navbar-logo' href='/'>Branko</a>
                 <div className='menu-icon' onClick={this.handleClick}>
@@ -22,16 +22,14 @@ class Navbar extends Component{
                     {MenuItems.map((item, index) =>{
                         return(
                             <li key={index}>
-                        <a className={item.cName} href={item.url}>
-                            {item.title}
-                        </a>
+                        <a className={item.cName} href={item.url}>{item.title}</a>
                     </li>
                         )
                     })}
                 </ul>
                 <Button>Sign Up</Button>
             </nav>
-            </header>
+            
         )
     }
 }

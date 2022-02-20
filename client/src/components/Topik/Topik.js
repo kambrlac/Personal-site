@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Carousel from "react-elastic-carousel";
 import './Topik.css';
 import {
   BrowserRouter as Router,
@@ -9,16 +10,16 @@ import {
   Outlet
 } from "react-router-dom";
 import { getInfo, getResource, getInfos } from "./api";
-import img1 from './Pictures/404.jpeg';
+import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Mama, Ncr, Node, Otp, Pub, Reakt, Responcive, Skills, Sql, Git} from './Pictures/images'
 
 
   function Contact(){
       return(
         <React.Fragment>
-        <h1>So...You were scammed into contacting me...</h1>
+        <h1>Hello, this is my contact page, feel free to send me a mail</h1>
         <p>My email is branko.n.petrovic@gmail.com</p>
         <p>
-          Press{" "}<Link className='here' to="/info">here</Link> to go back.
+          Click{" "}<Link className='here' to="/info">here</Link> to go back.
         </p>
       </React.Fragment>
       )
@@ -28,28 +29,16 @@ import img1 from './Pictures/404.jpeg';
     return(
       <React.Fragment>
       <div className='not-found'>
-      <h1>*The Weather Girls - It's Raining Men STOPS*</h1>
-      <p>Wow... Didn't think you'd find this.. Awkward..</p>
-      <img className='palma' src={img1} alt='you..dont want none of this'/>
+      <h1>404</h1>
+      <p>This is not the page you're looking for</p>
+      <img className='palma' src={ Palma } alt='you..dont want none of this'/>
       <p>
-        You want me to play EKV for real... Wow..{" "}<Link className='here' to="/info">go home..</Link>
+        Go back from whence you{" "}<Link className='here' to="/info">came</Link>
       </p>
       </div>
     </React.Fragment>
     )
 
-  }
-  
-  function Home() {
-    return (
-      <React.Fragment>
-        <h1>Welcome</h1>
-        <p>Hi, my name is Branko, and I'm a self taught web developer.</p>
-        <p>
-          Press{" "}<Link className='here' to="/info">here</Link> to see more about me.
-        </p>
-      </React.Fragment>
-    );
   }
   
   function Resource() {
@@ -72,7 +61,6 @@ import img1 from './Pictures/404.jpeg';
               <h3>{name}</h3>
               <p>{description}</p>
               <a className='links' href={link}>Click here to check them out</a>
-              <p>(Free advertising, I know T_T)</p>
             </div>
           );
     }
@@ -83,9 +71,10 @@ import img1 from './Pictures/404.jpeg';
     const info = getInfo(infoId);
   
     return (
-      <div>
+      <div className='row2'>
+      <div className='info-name'>
         <h2>{info.name}</h2>
-        <p>{info.description}</p>
+      </div>
   
         <ul>
           {info.resources.map((sub) => (
@@ -103,19 +92,33 @@ import img1 from './Pictures/404.jpeg';
   
   function Infos() {
     const infos = getInfos();
+
   
     return (
       <div>
-        <h1>Info</h1>
-        <ul>
-          {infos.map(({ name, id }) => (
-            <li key={id}>
-              <Link className='links' to={id}>{name}</Link>
-            </li>
+        <div className='titles'>
+          {infos.map(({ name, id , picture}) => (
+            <Link className='links' to={id}>
+            <span className='card tooltip' style={{'display': 'block'}}>
+            <div className='toprow1' key={id}>
+              {/* <img src={require('./Pictures/' + infos.picture + '.jpeg') }/> */}
+              <div className='row1'><p>{name}</p></div>
+            </div>
+            </span>
+            </Link>
           ))}
-        </ul>
-  
-  
+        </div>
+        <div className="titles-mobile">
+        <Carousel >
+        {infos.map(({ name, id, picture}) => (
+          <Link className='links' to={id}>
+            <div className='toprow1' key={id}>
+              <div className='row1'><p>{name}</p></div>
+            </div>
+            </Link>
+            ))}
+        </Carousel>
+      </div>
         <Outlet />
       </div>
     );
@@ -126,12 +129,8 @@ import img1 from './Pictures/404.jpeg';
       <Router>
         <div className='list'>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<NotFound />} />
-            <Route path="/contact?*" element={<NotFound />} />
-            <Route path="/info/*" element={<NotFound />} />
             <Route path="/contact" element={<Contact/>}/>
-            <Route path="/info" element={<Infos />}>
+            <Route path="/" element={<Infos />}>
               <Route path=":infoId" element={<Info />}>
                 <Route path=":resourceId" element={<Resource />} />
               </Route>

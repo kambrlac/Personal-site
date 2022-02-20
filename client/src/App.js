@@ -6,7 +6,7 @@ import Topik from './components/Topik/Topik';
 
 function App() {
   return (
-    <React.Fragment>
+    <React.Fragment> 
       <Navbar/>
       <Topik/>
     </React.Fragment>

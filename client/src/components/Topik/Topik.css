@@ -2,29 +2,65 @@
     box-sizing: border-box;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    
     text-decoration: none;
-}
+  }
 
 ul li{
   padding: 15px;
   list-style-type: none;
 }
+.card{
+  background: transparent;
+}
+.titles{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 100px;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+  
+
+  .toprow1{
+    width: 20vw;
+    max-width: 300px;
+    border-radius: 25px;
+    background-image: url(./Pictures/work.jpeg);
+    background-size: 100% 85%;
+    height: 250px;
+  }
+  .row1{
+    position: relative;
+    top: 85%;
+    height: 15%;
+    width: 100%;
+    background-color: #22577E;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 1.8rem;
+  }
+  .info-name{
+    text-align: center;
+    border-radius: 5px;
+    background: #22577E;
+    width: 50vw;
+    margin: 50px auto auto;
+  }
   
 .list {
-    margin-top: 10%vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1% auto 0;
     width: 50vw;
 }
 
 .links {
-      color: #3E8E7E;
+      color: white;
+      font-weight: 500;
 }
 
 
 .links:hover {
-        color: #cabd95 ;
         transition: 0.7s;
 }
 
@@ -41,13 +77,61 @@ ul li{
   width: 50vw;
   height: auto;
 }
+.titles-mobile{
+  display: none;
+}
 
 @media screen and (max-width: 960px){
-    .list {
+  .titles{
+    display: none;
+  }
+  .titles-mobile{
+    display: flex;
+  }
+  .list {
       width: 90vw;
-    }
-    .palma {
+  }
+  .palma {
       width: 80vw;
       height: auto;
-    }
+  }
+  .toprow1{
+      width: 100%;
+      background-size: 105% 95%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+  }
+  .titles-mobile.toprow1{
+    width: 100px;
+  }
+  .titles-mobile .links{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  .titles-mobile .row1{
+    text-align: center;
+  }
+}
+
+
+@keyframes shake {
+  0% { 
+    transform: rotate(2deg);
+  }
+  50% {
+   transform: rotate(-3deg);
+  }
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.tooltip:hover {
+  animation: shake 500ms ease-in-out forwards;
 }

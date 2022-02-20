@@ -1,9 +1,10 @@
-// import pub from './Videos/London.mp4'
+import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Mama, Ncr, Node, Otp, Pub, Reakt, Responcive, Skills, Sql, Git} from './Pictures/images'
 
 const infos = [
     {
       name: "Work",
       id: "work",
+      picture: "work",
       description: "My work history before programming",
       resources: [
         {
@@ -47,6 +48,7 @@ const infos = [
     {
       name: "About",
       id: "about",
+      picture: "About",
       description: "Some free info about me, for more contact Mark Zuckerberg",
       resources: [
         {
@@ -85,6 +87,7 @@ const infos = [
     {
       name: "Skills",
       id: "skills",
+      picture: "Skills",
       description: "What I use to build websites",
       resources: [
         {

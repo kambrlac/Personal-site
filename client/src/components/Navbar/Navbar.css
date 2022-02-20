@@ -1,5 +1,4 @@
 .NavbarItems{
-    background: linear-gradient(90deg, #7CD1B8, #3E8E7E);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -17,6 +16,10 @@
     cursor: pointer;
     font-size: 2rem;
     text-decoration: none;
+}
+.navbar-logo:hover{
+    text-decoration: none;
+    color: inherit;
 }
 
 .fa-react {
@@ -40,6 +43,10 @@
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+}
+.nav-links:hover{
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -76,6 +83,7 @@
     }
 
     .nav-menu {
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -87,7 +95,8 @@
     }
 
     .nav-menu.active {
-        background: linear-gradient(90deg, #7CD1B8, #3E8E7E);
+        margin-top: 40px;
+        background: linear-gradient(90deg, red, blue);
         left: 0;
         opacity: 1;
         transition: all 0.8s ease;
@@ -95,6 +104,7 @@
     }
 
     .nav-links {
+        margin-top: 0;
         text-align: center;
         padding: 1.8rem;
         width: 100%;
@@ -102,7 +112,7 @@
     }
 
     .nav-links:hover {
-        background: linear-gradient(90deg, #3E8E7E, #7CD1B8, #3E8E7E, #3E8E7E);
+        background: linear-gradient(90deg, red, blue, red, blue);
         background-size: 400% 400%;
 	    animation: gradient 5s ease infinite;
     }
@@ -143,7 +153,7 @@
 	    background-size: 400% 400%;
 	    animation: gradient 5s ease infinite;
     }
-    Button {
+    .btn {
         display: none;
     }
 }
