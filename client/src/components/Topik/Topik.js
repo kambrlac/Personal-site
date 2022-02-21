@@ -13,15 +13,15 @@ import { getInfo, getResource, getInfos } from "./api";
 import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Mama, Ncr, Node, Otp, Pub, Reakt, Responcive, Skills, Sql, Git} from './Pictures/images'
 
 
-  function Contact(){
+  function Comment(){
       return(
         <React.Fragment>
         <h1>Hello, this is my contact page, feel free to send me a mail</h1>
         <p>My email is branko.n.petrovic@gmail.com</p>
         <p>
-          Click{" "}<Link className='here' to="/info">here</Link> to go back.
+          Click{" "}<Link className='here' to="/">here</Link> to go back.
         </p>
-      </React.Fragment>
+        </React.Fragment>
       )
   }
 
@@ -33,7 +33,7 @@ import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Ma
       <p>This is not the page you're looking for</p>
       <img className='palma' src={ Palma } alt='you..dont want none of this'/>
       <p>
-        Go back from whence you{" "}<Link className='here' to="/info">came</Link>
+        Go back from whence you{" "}<Link className='here' to="/">came</Link>
       </p>
       </div>
     </React.Fragment>
@@ -93,15 +93,13 @@ import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Ma
   function Infos() {
     const infos = getInfos();
 
-  
     return (
       <div>
         <div className='titles'>
-          {infos.map(({ name, id , picture}) => (
+          {infos.map(({ name, id, clas }) => (
             <Link className='links' to={id}>
             <span className='card tooltip' style={{'display': 'block'}}>
-            <div className='toprow1' key={id}>
-              {/* <img src={require('./Pictures/' + infos.picture + '.jpeg') }/> */}
+            <div className={name} className={clas}  key={id}>
               <div className='row1'><p>{name}</p></div>
             </div>
             </span>
@@ -110,9 +108,9 @@ import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Ma
         </div>
         <div className="titles-mobile">
         <Carousel >
-        {infos.map(({ name, id, picture}) => (
+        {infos.map(({ name, id, clas}) => (
           <Link className='links' to={id}>
-            <div className='toprow1' key={id}>
+            <div className={clas} key={id}>
               <div className='row1'><p>{name}</p></div>
             </div>
             </Link>
@@ -129,13 +127,12 @@ import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Ma
       <Router>
         <div className='list'>
           <Routes>
-            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/comment" element={<Comment/>}/>
             <Route path="/" element={<Infos />}>
               <Route path=":infoId" element={<Info />}>
                 <Route path=":resourceId" element={<Resource />} />
               </Route>
             </Route>
-            
           </Routes>
         </div>
       </Router>

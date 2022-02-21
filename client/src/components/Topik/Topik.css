@@ -27,10 +27,10 @@ ul li{
     width: 20vw;
     max-width: 300px;
     border-radius: 25px;
-    background-image: url(./Pictures/work.jpeg);
     background-size: 100% 85%;
     height: 250px;
   }
+  
   .row1{
     position: relative;
     top: 85%;
@@ -98,6 +98,8 @@ ul li{
   .toprow1{
       width: 100%;
       background-size: 105% 95%;
+      margin-right: 5px;
+      margin-left: 5px;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
   }
@@ -112,6 +114,9 @@ ul li{
   }
   .titles-mobile .row1{
     text-align: center;
+  }
+  .info-name{
+    width: 90vw;
   }
 }
 
@@ -134,4 +139,14 @@ ul li{
 
 .tooltip:hover {
   animation: shake 500ms ease-in-out forwards;
+}
+
+.work{
+  background-image: url(./Pictures/work.jpeg);
+}
+.about{
+ background-image: url(./Pictures/about.jpeg);
+}
+.skills{
+  background-image: url(./Pictures/skills.jpeg);
 }

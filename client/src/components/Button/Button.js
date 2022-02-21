@@ -9,9 +9,9 @@ export const Button = ({
 
 
     return(
-        <form action="/contact">
+        <form action="/comment">
         <button className={'btn'} onClick={onClick} type={type} >
-            Contact me
+            Comment
         </button>
         </form>
     )

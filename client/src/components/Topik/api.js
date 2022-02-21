@@ -1,17 +1,15 @@
-import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Mama, Ncr, Node, Otp, Pub, Reakt, Responcive, Skills, Sql, Git} from './Pictures/images'
-
 const infos = [
     {
       name: "Work",
       id: "work",
-      picture: "work",
-      description: "My work history before programming",
+      clas: "toprow1 work",
       resources: [
         {
           name: "Radisson Blu Hotel",
           id: "radisson",
           description:"It was the first job I've had, as a room service guy.",
-          link: 'https://www.radissonhotels.com/en-us/hotels/radisson-collection-old-mill-belgrade'
+          link: 'https://www.radissonhotels.com/en-us/hotels/radisson-collection-old-mill-belgrade',
+          clas: "Pictures/404.jpeg"
         },
         {
           name: "Mama Shelter",
@@ -26,7 +24,6 @@ const infos = [
           description:
             "I've perfected grilling in this pub. Some call me the patty whisperer.",
           link: "http://www.oldlondonpub.rs/",
-        //   video: {pub},
         },
         {
           name: "NCR",
@@ -48,8 +45,7 @@ const infos = [
     {
       name: "About",
       id: "about",
-      picture: "About",
-      description: "Some free info about me, for more contact Mark Zuckerberg",
+      clas: "toprow1 about",
       resources: [
         {
           name: "Why programming",
@@ -87,8 +83,7 @@ const infos = [
     {
       name: "Skills",
       id: "skills",
-      picture: "Skills",
-      description: "What I use to build websites",
+      clas: "toprow1 skills",
       resources: [
         {
           name: "SQL",
