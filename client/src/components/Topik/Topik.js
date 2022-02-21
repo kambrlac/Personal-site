@@ -10,8 +10,6 @@ import {
   Outlet
 } from "react-router-dom";
 import { getInfo, getResource, getInfos } from "./api";
-import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Mama, Ncr, Node, Otp, Pub, Reakt, Responcive, Skills, Sql, Git} from './Pictures/images'
-
 
   function Comment(){
       return(
@@ -31,7 +29,7 @@ import {Work, Palma, About, Api, Bootstrap, Blu, Express, Java, Jquery, Json, Ma
       <div className='not-found'>
       <h1>404</h1>
       <p>This is not the page you're looking for</p>
-      <img className='palma' src={ Palma } alt='you..dont want none of this'/>
+      {/* <img className='palma' src={ Palma } alt='you..dont want none of this'/> */}
       <p>
         Go back from whence you{" "}<Link className='here' to="/">came</Link>
       </p>

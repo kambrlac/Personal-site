@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Topik from './components/Topik/Topik';
-import Footer from './components/Footer/Footer';
+import Futer from './components/Futer/Futer';
 
 
 function App() {
@@ -10,7 +10,6 @@ function App() {
     <React.Fragment> 
       <Navbar/>
       <Topik/>
-      <Footer/>
     </React.Fragment>
   );
 }

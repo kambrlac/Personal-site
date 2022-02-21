@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: linear-gradient(217deg, #7CD1B8, rgba(255,0,0,0) 70.71%),
   linear-gradient(127deg, #292C6D, rgba(0,255,0,0) 70.71%),
   linear-gradient(336deg, #ECB365 55%, rgba(0,0,255,0) 70.71%);
@@ -15,4 +18,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.index{
+  margin-bottom: 80px;
 }
