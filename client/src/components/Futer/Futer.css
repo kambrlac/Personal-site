@@ -8,9 +8,12 @@
 }
 .info{
     display: grid;
-    grid-gap: 40px;
     list-style: none;
     text-align: center;
     justify-content: center;
-    margin-right: 2rem;
+}
+.claim{
+    justify-content: center;
+    display: grid;
+    margin-top: 25px;
 }
