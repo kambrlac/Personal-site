@@ -4,12 +4,14 @@ import './Futer.css';
 function Futer(){
         return(
         <div className='footer'>
-                <div className='info left'>
+        <div className='info'>
+                <div className='left'>
                         hello
                 </div>
-                <div className='info right'>
+                <div className='right'>
                         hello
                 </div>
+        </div>       
                 <div className='claim'>
                         hello
                 </div>

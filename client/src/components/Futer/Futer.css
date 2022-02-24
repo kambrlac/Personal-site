@@ -11,9 +11,9 @@
     list-style: none;
     text-align: center;
     justify-content: center;
+    height: 80%;
 }
 .claim{
     justify-content: center;
     display: grid;
-    margin-top: 2.5vh;
 }
