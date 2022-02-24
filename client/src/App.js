@@ -8,8 +8,11 @@ import Futer from './components/Futer/Futer';
 function App() {
   return (
     <React.Fragment> 
+    <div className='app'>
       <Navbar/>
       <Topik/>
+      </div>
+      <Futer/>
     </React.Fragment>
   );
 }

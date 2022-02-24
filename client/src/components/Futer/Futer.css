@@ -1,5 +1,16 @@
 .footer{
-    margin-top: 100vh;
-    height: 200px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    background-color: #22577E;
+}
+.info{
+    display: grid;
+    grid-gap: 40px;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-right: 2rem;
 }

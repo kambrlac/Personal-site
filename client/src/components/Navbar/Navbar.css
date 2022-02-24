@@ -5,7 +5,7 @@
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-    width: 100vw;
+    width: 95vw;
 }
 
 
@@ -96,6 +96,7 @@
     }
 
     .nav-menu.active {
+        width: 100vw;
         margin-top: 20px;
         background: #54BAB9;
         left: 0;
