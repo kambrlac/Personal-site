@@ -166,6 +166,7 @@ font-weight: 500;
     width: 90vw;
   }
 }
+
 @media screen and (max-width: 400px){
   .toprow1{
     height: 170px;
