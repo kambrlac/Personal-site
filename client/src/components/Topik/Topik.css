@@ -164,7 +164,7 @@ font-weight: 500;
     width: 90vw;
   }
   .titles-mobile .fViXLK{
-    display: none;
+    opacity: 0;
   }
 }
 
