@@ -5,12 +5,7 @@ function Futer(){
         return(
         <div className='footer'>
         <div className='info'>
-                <div className='left'>
-                        hello
-                </div>
-                <div className='right'>
-                        hello
-                </div>
+        <i className='fa-brands fa-instagram'></i>
         </div>       
                 <div className='claim'>
                         Branko 2022

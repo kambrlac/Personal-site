@@ -163,6 +163,9 @@ font-weight: 500;
   .info-name{
     width: 90vw;
   }
+  .titles-mobile .fViXLK{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 400px){
