@@ -13,10 +13,8 @@ function Futer(){
                 </div>
         </div>       
                 <div className='claim'>
-                        hello
+                        Branko 2022
                 </div>
-
-
         </div>
         )
 }

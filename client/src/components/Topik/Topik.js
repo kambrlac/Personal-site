@@ -23,30 +23,11 @@ import { getInfo, getResource, getInfos } from "./api";
       )
   }
 
-  function NotFound() {
-    return(
-      <React.Fragment>
-      <div className='not-found'>
-      <h1>404</h1>
-      <p>This is not the page you're looking for</p>
-      {/* <img className='palma' src={ Palma } alt='you..dont want none of this'/> */}
-      <p>
-        Go back from whence you{" "}<Link className='here' to="/">came</Link>
-      </p>
-      </div>
-    </React.Fragment>
-    )
-
-  }
-  
   function Resource() {
     const { infoId, resourceId } = useParams();
-  
     const { name, description, link } = getResource({ infoId, resourceId });
     
-   
-  
-    if(link == null){
+   if(link == null){
         return (
             <div>
               <h3>{name}</h3>
@@ -67,13 +48,12 @@ import { getInfo, getResource, getInfos } from "./api";
   function Info() {
     const { infoId } = useParams();
     const info = getInfo(infoId);
-  
+
     return (
       <div className='row2'>
       <div className='info-name'>
         <h2>{info.name}</h2>
       </div>
-  
         <ul>
           {info.resources.map((sub) => (
             <li key={sub.id}>
@@ -81,9 +61,7 @@ import { getInfo, getResource, getInfos } from "./api";
             </li>
           ))}
         </ul>
-  
-  
-        <Outlet />
+        <Outlet/>
       </div>
     );
   }
@@ -96,7 +74,7 @@ import { getInfo, getResource, getInfos } from "./api";
         <div className='titles'>
           {infos.map(({ name, id, clas }) => (
             <Link className='links' to={id}>
-            <span className='card tooltip' style={{'display': 'block'}}>
+            <span className='card' style={{'display': 'block'}}>
             <div className={name} className={clas}  key={id}>
               <div className='row1'><p>{name}</p></div>
             </div>

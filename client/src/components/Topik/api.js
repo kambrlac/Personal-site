@@ -9,7 +9,6 @@ const infos = [
           id: "radisson",
           description:"It was the first job I've had, as a room service guy.",
           link: 'https://www.radissonhotels.com/en-us/hotels/radisson-collection-old-mill-belgrade',
-          clas: "Pictures/404.jpeg"
         },
         {
           name: "Mama Shelter",

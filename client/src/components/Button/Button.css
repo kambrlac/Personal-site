@@ -9,9 +9,15 @@
     transition: 1s;
     font-size: 20px;
     font-weight: 550;
-    background: linear-gradient(-45deg, #FFC286, #35858B);
+    background: linear-gradient(-45deg, #7CD1B8, #35858B);
 }
-
+.btn:hover {
+    padding: 8px 20px;
+    background: linear-gradient(-45deg, #35858B, #7CD1B8, #7CD1B8, #35858B);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+    box-shadow: 0px 5px 7px rgba(1, 15, 13, 0.4);
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -23,11 +29,3 @@
 		background-position: 0% 50%;
 	}
 }
-
-.btn:hover {
-    padding: 8px 20px;
-    background: linear-gradient(-45deg, #35858B, #7CD1B8, #FFC286, #35858B);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
-}
-

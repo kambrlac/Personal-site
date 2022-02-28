@@ -7,8 +7,6 @@
     position: sticky;
     width: 95vw;
 }
-
-
 .navbar-logo {
     color: #fff;
     justify-self: start;
@@ -21,12 +19,6 @@
     text-decoration: none;
     color: inherit;
 }
-
-.fa-react {
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
-}
-
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -37,7 +29,6 @@
     justify-content: end;
     margin-right: 2rem;
 }
-
 .nav-links {
     display: inherit;
     color: white;
@@ -48,8 +39,6 @@
     text-decoration: none;
     color: inherit;
 }
-
-
 .nav-links:after{
   content: '';
   margin: auto;
@@ -59,52 +48,53 @@
   background: transparent;
   transition: width 1s ease;
 }
-
 .nav-links:hover:after {
     width: 70%;
     background: #fff;
 }
-
-.fa-bars {
-    color: #fff;
-}
-
 .nav-links-mobile {
     display: none;
 }
-
 .menu-icon {
     display: none;
+}
+.fa-react {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+.fa-bars {
+    color: #fff;
+}
+.fa-times {
+    color: #fff;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 960px) {
     .NavbarItems{
         position: relative;
     }
-
     .nav-menu {
-        margin-top: 40px;
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 550px;
         position: absolute;
-        top: 59px;
+        top: 60px;
         left: -100%;
         opacity: 0;
         transition: all 0.5s ease;
     }
-
     .nav-menu.active {
         width: 100vw;
         margin-top: 20px;
-        background: #54BAB9;
+        background: #35858B;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
     }
-
     .nav-links {
         margin-top: 0;
         text-align: center;
@@ -112,21 +102,35 @@
         width: 100%;
         display: table;
     }
-
     .nav-links:hover {
-        background: #C1DEAE;
+        background: #7CD1B8;
     }
     .nav-links:hover:after{
         width: 0px;
     }
-
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        padding: 1.3rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: linear-gradient(-45deg, #7CD1B8, #35858B);
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .nav-links-mobile:hover {
+        background: linear-gradient(-45deg, #35858B, #7CD1B8, #7CD1B8, #35858B);
+	    background-size: 400% 400%;
+	    animation: gradient 5s ease infinite;
+    }
     .navbar-logo {
         position: absolute;
         top: 0;
         left: 0;
         transform: translate(25%, 50%);
     }
-
     .menu-icon{
         display: block;
         position: absolute;
@@ -136,33 +140,9 @@
         font-size: 1.8rem;
         cursor: pointer;
     }
-    .nav-links-mobile {
-        display: block;
-        text-align: center;
-        padding: 1.3rem;
-        margin: 2rem auto;
-        border-radius: 4px;
-        width: 80%;
-        background: linear-gradient(-45deg, #FFC286, #35858B);
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    .nav-links-mobile:hover {
-        background: linear-gradient(-45deg, #35858B, #7CD1B8, #FFC286, #35858B);
-	    background-size: 400% 400%;
-	    animation: gradient 5s ease infinite;
-    }
     .btn {
         display: none;
     }
 }
 
-.fa-times {
-    color: #fff;
-    font-size: 2rem;
-}
 
-nav {
-    position: fixed;
-}

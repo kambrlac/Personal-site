@@ -9,7 +9,6 @@ class Navbar extends Component{
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
     }
-
     render(){
         return(
            
@@ -29,9 +28,6 @@ class Navbar extends Component{
                 </ul>
                 <Button>Comment</Button>
             </nav>
-            
-        )
-    }
-}
+        )}}
 
 export default Navbar;
