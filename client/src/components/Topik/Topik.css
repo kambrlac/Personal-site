@@ -16,10 +16,10 @@ ul li{
                                    /* Links */
 
 .here{
-  color: #3E8E7E;
+  color: #cabd95;
 }
 .here:hover{
- color: #cabd95 ;
+ color:  #1A1A40;
  transition: 0.7s;
 }
 .links {
