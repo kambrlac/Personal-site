@@ -159,9 +159,6 @@ font-weight: 500;
   .toprow1:hover{
     box-shadow: 0px 0px 0px rgba(1, 15, 13, 0.4);
   }
-  .row1:hover{
-    background-color: #cabd95;
-  }
   .info-name{
     width: 90vw;
   }
@@ -182,6 +179,12 @@ font-weight: 500;
     display: none;
   }
   .titles-mobile .cNNJIt{
+    display: none;
+  }
+  .titles-mobile .fVgyLU{
+    display: none;
+  }
+  .titles-mobile .fViXLK{
     display: none;
   }
 }
