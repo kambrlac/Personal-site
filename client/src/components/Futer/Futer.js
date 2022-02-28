@@ -5,7 +5,16 @@ function Futer(){
         return(
         <div className='footer'>
         <div className='info'>
-        <i className='fa-brands fa-instagram'></i>
+                <div className='media'>
+                        <p>Follow me</p>
+                        <a className='ico' href='https://www.instagram.com/branko_petrovic/?hl=en'><i class="fab fa-instagram fa-2x"></i></a>
+                        <a className='ico' href='/long-gone'><i class="fab fa-facebook fa-2x"></i></a>
+                </div>
+                <div className='contact'>
+                        <p>Contact me</p>
+                        <a className='ico' href='/'><i class="far fa-envelope fa-2x"></i></a>
+                        <a className='ico' href='/'><i class="fas fa-phone-alt fa-2x"></i></a>
+                </div>
         </div>       
                 <div className='claim'>
                         Branko 2022
