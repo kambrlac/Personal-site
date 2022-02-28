@@ -10,6 +10,7 @@ import {
   Outlet
 } from "react-router-dom";
 import { getInfo, getResource, getInfos } from "./api";
+import img1 from './Pictures/404.jpeg'
 
   function Comment(){
       return(
@@ -22,6 +23,17 @@ import { getInfo, getResource, getInfos } from "./api";
         </React.Fragment>
       )
   }
+  function Gone(){
+    return(
+      <React.Fragment>
+      <h1>AAAANNNDDD it's gone...</h1>
+      <img src={img1} className='palma'/>
+      <p>
+        Click{" "}<Link className='here' to="/">here</Link> to go back.
+      </p>
+      </React.Fragment>
+    )
+}
 
   function Resource() {
     const { infoId, resourceId } = useParams();
@@ -109,6 +121,7 @@ import { getInfo, getResource, getInfos } from "./api";
                 <Route path=":resourceId" element={<Resource />} />
               </Route>
             </Route>
+            <Route path="/gone" element={<Gone />}></Route>
           </Routes>
         </div>
       </Router>
