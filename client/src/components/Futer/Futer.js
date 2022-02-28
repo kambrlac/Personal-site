@@ -13,7 +13,7 @@ function Futer(){
                 <div className='contact'>
                         <p>Contact me</p>
                         <a className='ico' href='/'><i class="far fa-envelope fa-2x"></i></a>
-                        <a className='ico' href='/'><i class="fas fa-phone-alt fa-2x"></i></a>
+                        <a className='ico' href='tel:+381649827907'><i class="fas fa-phone-alt fa-2x"></i></a>
                 </div>
         </div>       
                 <div className='claim'>
