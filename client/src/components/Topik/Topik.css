@@ -14,7 +14,8 @@ ul li{
   list-style-type: none;
 }
 .palma{
-  max-width: 600px;
+  width: 40vw;
+  min-width: 220px;
   height: auto;
 }
                                    /* Links */
@@ -171,7 +172,6 @@ font-weight: 500;
     opacity: 0;
   }
 }
-
 @media screen and (max-width: 400px){
   .toprow1{
     height: 220px;
@@ -194,5 +194,8 @@ font-weight: 500;
   }
   .titles-mobile .fViXLK{
     display: none;
+  }
+  .palma{
+    width: 70vw;
   }
 }
